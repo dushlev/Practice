@@ -1,0 +1,1 @@
+The program reads the line from the file and displays the result in a formatted form.
