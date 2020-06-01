@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data.Entity;
 
-namespace task1
+namespace SharedProject
 {
     class MyContextInitializer : CreateDatabaseIfNotExists<UserContext>
     {

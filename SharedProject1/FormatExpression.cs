@@ -1,19 +1,18 @@
 ﻿using System;
-using System.IO;
 
-namespace task1
+namespace SharedProject
 {
     class FormatExpression
     {
         string result = null;
-        string str = null;
+        public string str = null;
         int count = 0;
         int[] numArr; // = { -6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20 };                  
         public string FormatStr()
         {
             try
             {
-                str = File.ReadAllText(@"file.txt");
+                //str = File.ReadAllText(@"file.txt");
                 string[] strArr = str.Split(',');
                 numArr = new int[strArr.Length];
 

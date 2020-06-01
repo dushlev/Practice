@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Linq;
 using System.Data.Entity;
+using System.IO;
+using SharedProject;
 
 namespace task1
 {
@@ -10,10 +12,12 @@ namespace task1
         static void Main(string[] args)
         {
             Console.WriteLine("The program reads the line from the file and displays the result in a formatted form.");
-            string str = null;
+            string str = null, strFormatobj = null;
             try
             {
+                strFormatobj = File.ReadAllText(@"file.txt");
                 FormatExpression obj = new FormatExpression();
+                obj.str = strFormatobj;
                 str = obj.FormatStr();
             }
             catch (Exception ex)
@@ -38,7 +42,7 @@ namespace task1
 .Skip(Math.Max(0, db.Expressions.OrderBy(b => b.Id).Count() - 5));
                     foreach (Expression exp in lastResult)
                     {
-                        Console.WriteLine("{0}.{1}", exp.Id, exp.ExpressionStr);
+                        Console.WriteLine("{0}. {1}", exp.Id, exp.ExpressionStr);
                     }
                 }
             }
