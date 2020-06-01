@@ -9,8 +9,11 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedProject1", "SharedPro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{2E5E5EAB-7768-4550-9383-4701A11A5140}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp", "WindowsFormsApp\WindowsFormsApp.csproj", "{27D7D466-959C-4D8D-82AC-C3B939A12F76}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SharedProject1\SharedProject1.projitems*{27d7d466-959c-4d8d-82ac-c3b939a12f76}*SharedItemsImports = 4
 		SharedProject1\SharedProject1.projitems*{2e5e5eab-7768-4550-9383-4701a11a5140}*SharedItemsImports = 4
 		SharedProject1\SharedProject1.projitems*{6e098b40-ecf7-4807-84b9-5a0dab42029e}*SharedItemsImports = 13
 		SharedProject1\SharedProject1.projitems*{99b9606d-6ce9-4939-8c52-f7b07e7358f2}*SharedItemsImports = 4
@@ -28,6 +31,10 @@ Global
 		{2E5E5EAB-7768-4550-9383-4701A11A5140}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E5E5EAB-7768-4550-9383-4701A11A5140}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E5E5EAB-7768-4550-9383-4701A11A5140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27D7D466-959C-4D8D-82AC-C3B939A12F76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D7D466-959C-4D8D-82AC-C3B939A12F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D7D466-959C-4D8D-82AC-C3B939A12F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D7D466-959C-4D8D-82AC-C3B939A12F76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
